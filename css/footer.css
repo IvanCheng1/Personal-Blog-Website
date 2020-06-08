@@ -1,0 +1,8 @@
+/* footer css */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: ft;
+}

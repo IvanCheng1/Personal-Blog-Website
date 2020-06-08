@@ -1,0 +1,70 @@
+@import "./header.css";
+@import "./sidebar.css";
+@import "./footer.css";
+@import "./main-blog.css";
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.box {
+    border: 1px solid red;
+    background: #F8FA9D;
+}
+
+.button {
+    border: none;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 60px 1fr 80px;
+    grid-gap: 10px;
+    grid-template-areas: "hd" "sd" "main" "ft";
+    border: 2px solid black;
+    padding: 5px;
+}
+
+@media(min-width:700px) {
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd sd main main main main main main" "ft ft ft ft ft ft ft ft";
+    }
+}
+
+@media(min-width:900px) {
+    .container {
+        grid-template-columns: 40px repeat(7, 1fr);
+    }
+}

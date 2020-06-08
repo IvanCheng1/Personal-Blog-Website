@@ -1,0 +1,33 @@
+/* sidebar css */
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: sd;
+}
+
+.side-links {
+    display: flex;
+    align-items: center;
+    grid-area: sd;
+}
+
+@media(min-width:700px) {
+    .sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: start;
+        grid-area: sd;
+    }
+    .side-links {
+        display: flex;
+        align-items: center;
+        grid-area: sd;
+        padding-top: 5%;
+    }
+}
