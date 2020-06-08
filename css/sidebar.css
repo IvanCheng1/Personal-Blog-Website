@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: sd;
+    background-color: lightsteelblue;
 }
 
 .side-links {
