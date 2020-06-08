@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <title>Exercise 1</title>
-    <meta
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-      name="viewport"
-    />
+    <title>My Personal Blog Page</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/global.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-  <style>
-  .container{
-    /* Step 1: Set display to grid */
-      display:grid;
-    height: 800px;
-   /* Step 2: setup rows amd columns */
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-    grid-gap: 15px;
-/*       grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "sd sd sd main main main main main"
-      "ft ft ft ft ft ft ft ft";
-   */    border: 2px solid yellow;
-  }
-  .box{
-    border: 1px solid red;
-    background: #F8FA9D;
-    }
-  .header{
-/*     grid-area:hd; */
-    display: flex;
-    align-text: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer{
-/*     grid-area:ft; */
-  }
-  .sidebar{
-/*     grid-area:sd; */
-  }
-  .content{
-/*     grid-area:main; */
-  }
-  </style>
-  </head>
+</head>
 
-  <body>
-  <div class = "container">
-    <div class="header box">Header</div>
-    <div class="sidebar box">Sidebar</div>
-    <div class="content box">Content</div>
-    <div class="footer box">Footer</div>
-  </div>
-  </body>
+<body>
+    <div class="container">
+        <div class="header box">
+            <h1>My Personal Blog Website</h1>
+        </div>
+        <div class="sidebar box">
+            <!-- <h2>This is the sidebar</h2> -->
+            <div class="sidebox">
+                <h3>Home</h3>
+            </div>
+            <div class="sidebox">
+                <h3>Latest Blog</h3>
+            </div>
+            <div class="sidebox">
+                <h3>About Me</h3>
+            </div>
+        </div>
+        <div class="content box">
+            <div class="blog box">
+                <h2 class="blog-title">Title of the blog!!</h2>
+                <h3 class="blog-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iusto dolor rerum. Quam illum quaerat unde sapiente et? Nostrum in porro laudantium maiores tempore est natus laborum ab provident nesciunt.</h3>
+                <h4 class="blog-duration">2 min read</h4>
+                <div class="index-image"><img src="./images/paris.jpg"></div>
+            </div>
+            <div class="blog box">
+                <h2 class="blog-title">Title of the blog!!</h2>
+                <h3 class="blog-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iusto dolor rerum. Quam illum quaerat unde sapiente et? Nostrum in porro laudantium maiores tempore est natus laborum ab provident nesciunt.</h3>
+                <h4 class="blog-duration">2 min read</h4>
+                <div class="index-image"><img src="./images/london.jpeg"></div>
+            </div>
+            <div class="blog box">
+                <h2 class="blog-title">Title of the blog!!</h2>
+                <h3 class="blog-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iusto dolor rerum. Quam illum quaerat unde sapiente et? Nostrum in porro laudantium maiores tempore est natus laborum ab provident nesciunt.</h3>
+                <h4 class="blog-duration">2 min read</h4>
+                <div class="index-image"><img src="./images/new_york.jpg"></div>
+            </div>
+            <div class="blog box">
+                <h2 class="blog-title">Title of the blog!!</h2>
+                <h3 class="blog-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iusto dolor rerum. Quam illum quaerat unde sapiente et? Nostrum in porro laudantium maiores tempore est natus laborum ab provident nesciunt.</h3>
+                <h4 class="blog-duration">2 min read</h4>
+                <div class="index-image"><img src="./images/hong_kong.jpg"></div>
+            </div>
+        </div>
+        <div class="footer box">
+            By Ivan Cheng
+        </div>
+    </div>
+</body>
+
 </html>
