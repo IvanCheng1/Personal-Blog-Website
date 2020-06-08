@@ -96,6 +96,25 @@
     width: 100%;
 }
 
+.read-more {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    flex-direction: rows;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 25px;
+}
+
+.button {
+    border: none;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+}
+
 @media(min-width:700px) {
     .sidebar {
         display: flex;
